@@ -1,0 +1,16 @@
+{
+	"name": "adf-ade-project1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true,
+			"isExplicitlySet": false
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "342e2c55-4d27-472a-bd6a-b1162784e264",
+		"tenantId": "a262fa36-21a7-4964-9ac9-7067ffe93cea"
+	}
+}
