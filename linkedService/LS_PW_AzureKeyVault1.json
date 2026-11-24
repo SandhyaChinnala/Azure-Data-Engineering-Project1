@@ -1,0 +1,11 @@
+{
+	"name": "LS_PW_AzureKeyVault1",
+	"properties": {
+		"description": "this is the linked service to connect the password (sql server login user password) to ADF",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://key-vault-ade-project1.vault.azure.net/"
+		}
+	}
+}
