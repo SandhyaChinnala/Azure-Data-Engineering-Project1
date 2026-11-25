@@ -1,0 +1,28 @@
+{
+	"name": "LS_OnPrem_SqlServer",
+	"properties": {
+		"description": "This is the linked service connection to connect onprem sql server to ADF",
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "Sandhya\\SQLEXPRESS2025",
+			"database": "AdventureWorksLT2025",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "srch",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_PW_AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "password"
+			}
+		},
+		"connectVia": {
+			"referenceName": "SHIR-ade-project1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
